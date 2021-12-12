@@ -1,6 +1,7 @@
 #! /usr/bin/env sh
 
 cp package.json package-tmp.json
+git add -A
 
 echo 'Deployment Started ...'
 npm version $1
