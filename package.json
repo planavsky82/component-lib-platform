@@ -18,5 +18,8 @@
   "homepage": "https://github.com/planavsky82/design-system#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "bin": {
+    "run-cli": "bin/install.js"
   }
 }
