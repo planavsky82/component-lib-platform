@@ -2,7 +2,7 @@
 
 cp package.json package-tmp.json
 git add -A
-git commit -m 'chore(release): temp package.json'
+git commit -m 'chore(release): create temporary package.json'
 
 echo 'Deployment Started ...'
 npm version $1
