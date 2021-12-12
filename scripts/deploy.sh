@@ -13,7 +13,7 @@ npm publish
 echo 'Adding GIT Commit ...'
 rm -rf package-tmp.json
 git add -A
-git commit --amend -m "chore(release): $1"
+git commit -m "chore(release): $1"
 git push
 
 echo 'Deployment Complete.'
