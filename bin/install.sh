@@ -1,6 +1,6 @@
 #! /usr/bin/env sh
 
-echo 'Beginning design system install ... @@@@@@@@@@@@@@'
+echo 'Beginning design system install ...'
 
 rm -rf package.json package-lock.json node_modules
 
