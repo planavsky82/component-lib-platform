@@ -9,7 +9,8 @@ npm i @planit/design-system
 cp -R node_modules/@planit/design-system/. ./
 rm -rf ./bin
 
-cp package-tmp.jspn package.json
+rm -rf package.json
+cp package-tmp.json package.json
 rm -rf package-tmp.json
 
 echo 'Installation Complete.'
