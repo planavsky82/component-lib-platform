@@ -1,6 +1,9 @@
 #! /usr/bin/env sh
 
 cp package.json package-tmp.json
+
+node ./scripts/edit-package-json.js
+
 git add -A
 git commit -m 'chore(release): create temporary package.json'
 
