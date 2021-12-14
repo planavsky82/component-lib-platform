@@ -7,3 +7,4 @@ delete packageJson.bin;
 delete packageJson.repository;
 delete packageJson.bugs;
 delete packageJson.homepage;
+fs.writeFileSync('./package-tmp.json', JSON.stringify(packageJson));
