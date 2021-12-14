@@ -11,4 +11,6 @@ rm -rf ./bin package.json
 cp package-tmp.json package.json
 rm -rf package-tmp.json
 
+echo $1
+
 echo 'Installation Complete.'
