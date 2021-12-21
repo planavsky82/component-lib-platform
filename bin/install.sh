@@ -7,7 +7,7 @@ rm -rf package.json package-lock.json node_modules
 npm i @planit/design-system
 
 cd node_modules/@planit/design-system
-node edit-package-json.js $1 $2
+node ./edit-package-json.js $1 $2
 cd ../../..
 cp -R node_modules/@planit/design-system/. ./
 rm -rf ./bin package.json
