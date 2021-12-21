@@ -2,7 +2,7 @@
 
 let fs = require('fs');
 
-const packageJson = JSON.parse(fs.readFileSync('./package-tmp.json', { encoding:'utf8' }));
+const packageJson = JSON.parse(fs.readFileSync('../package-tmp.json', { encoding:'utf8' }));
 let args = process.argv.slice(3);
 console.log(args);
 

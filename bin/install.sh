@@ -4,12 +4,12 @@ rm -rf package.json package-lock.json node_modules
 
 npm i @planit/design-system
 
-cp -R node_modules/@planit/design-system/. ./
 cd node_modules/@planit/design-system/bin
 node edit-package-json.js $1 $2
 cd ../../../..
-#rm -rf ./bin package.json
-#cp package-tmp.json package.json
-#rm -rf package-tmp.json
+cp -R node_modules/@planit/design-system/. ./
+rm -rf ./bin package.json
+cp package-tmp.json package.json
+rm -rf package-tmp.json
 
 echo 'Installation Complete.'
