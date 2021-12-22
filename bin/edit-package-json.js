@@ -7,4 +7,4 @@ let args = process.argv;
 
 packageJson.name = args[2]
 packageJson.author = args[3] || ''
-fs.writeFileSync('./package-tmp.json', JSON.stringify(packageJson, null, 2));
+fs.writeFileSync('../package-tmp.json', JSON.stringify(packageJson, null, 2));
