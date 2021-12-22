@@ -4,8 +4,9 @@ rm -rf package.json package-lock.json node_modules
 
 npm i @planit/design-system
 
+echo '!!!!!!!!!!!!!!!aaaaaaaaaaaaaa'
+
 cd node_modules/@planit/design-system/bin
-echo '!!!!!!!!!!!!!!!'
 node edit-package-json.js $0 $1
 cd ../../../..
 cp -R node_modules/@planit/design-system/. ./
