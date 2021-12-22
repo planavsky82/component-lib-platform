@@ -8,7 +8,7 @@ cd node_modules/@planit/design-system/bin
 node ../scripts/edit-package-json-consumer.js $1 $2
 cd ../../../..
 cp -R node_modules/@planit/design-system/. ./
-rm -rf ./bin package.json scripts
+rm -rf ./bin package.json
 cp package-tmp.json package.json
 rm -rf package-tmp.json
 
