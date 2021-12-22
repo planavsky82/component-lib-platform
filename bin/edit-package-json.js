@@ -7,5 +7,6 @@ let args = process.argv;
 
 packageJson.name = args[2] || 'my-design-system';
 packageJson.author = args[3] || '';
+packageJson.devDependencies['@planit/design-system'] = packageJson.version;
 packageJson.version = '0.0.1';
 fs.writeFileSync('../package-tmp.json', JSON.stringify(packageJson, null, 2));
