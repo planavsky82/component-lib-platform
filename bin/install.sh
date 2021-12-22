@@ -2,7 +2,7 @@ echo 'Beginning design system install ...'
 
 rm -rf package.json package-lock.json node_modules
 
-npm i @planit/design-system
+npm i @planit/design-system --save-dev
 
 cd node_modules/@planit/design-system/bin
 node edit-package-json.js $1 $2
@@ -11,5 +11,7 @@ cp -R node_modules/@planit/design-system/. ./
 rm -rf ./bin package.json scripts
 cp package-tmp.json package.json
 rm -rf package-tmp.json
+
+npm i
 
 echo 'Installation Complete.'
