@@ -1,6 +1,6 @@
 {
   "name": "@planit/design-system",
-  "version": "0.0.92",
+  "version": "0.0.93",
   "description": "Design System Starter",
   "main": "index.js",
   "scripts": {
