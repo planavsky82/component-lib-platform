@@ -13,14 +13,5 @@
   "license": "ISC",
   "publishConfig": {
     "access": "public"
-  },
-  "bin": "bin/install.sh",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/planavsky82/design-system.git"
-  },
-  "bugs": {
-    "url": "https://github.com/planavsky82/design-system/issues"
-  },
-  "homepage": "https://github.com/planavsky82/design-system#readme"
+  }
 }
