@@ -11,6 +11,8 @@ cp -R node_modules/@planit/design-system/. ./
 rm -rf ./bin package.json scripts
 cp package-tmp.json package.json
 rm -rf package-tmp.json
+cp gitignore .gitignore
+rm -rf gitignore
 
 npm i
 
