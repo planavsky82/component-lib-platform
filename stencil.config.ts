@@ -6,6 +6,7 @@ import tailwindcss from "tailwindcss";
 import cssnano from "cssnano";
 import purgecss from "@fullhuman/postcss-purgecss";
 import replace from "postcss-replace"
+import { reactOutputTarget as react } from '@stencil/react-output-target';
 
 //purge function to keep only the classes used in EACH component
 const purge = purgecss({
@@ -30,6 +31,11 @@ export const config: Config = {
       type: 'www',
       serviceWorker: null, // disable service workers
     },
+    react({
+      componentCorePackage: 'your-stencil-library-name',
+      proxiesFile: './stencil-react-wrappers/src/components/stencil-generated/index.ts',
+      includeDefineCustomElements: true,
+    })
   ],
   //add postcss as a plugin
   plugins: [
