@@ -8,10 +8,10 @@ git add -A
 git commit -m 'chore(release): create temporary package.json'
 
 echo 'Deployment Started ...'
-#npm version $1
+npm version $1
 
 echo 'Publishing NPM Package ...'
-#npm publish
+npm publish
 
 echo 'Adding GIT Commit ...'
 #rm -rf package-tmp.json
