@@ -1,6 +1,6 @@
 {
   "name": "@planit/design-system",
-  "version": "0.0.107",
+  "version": "0.0.108",
   "description": "Design System Starter",
   "scripts": {
     "deploy:patch": "./scripts/deploy.sh patch",
