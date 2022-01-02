@@ -17,6 +17,11 @@ const purge = purgecss({
 export const config: Config = {
   namespace: 'design-system',
   outputTargets: [
+    react({
+      componentCorePackage: '@planit/design-system-web-components',
+      proxiesFile: '../stencil-react-wrappers/src/components/stencil-generated/index.ts',
+      includeDefineCustomElements: true,
+    }),
     {
       type: 'dist',
       esmLoaderPath: '../loader',
@@ -30,12 +35,7 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null, // disable service workers
-    },
-    react({
-      componentCorePackage: 'your-stencil-library-name',
-      proxiesFile: './stencil-react-wrappers/src/components/stencil-generated/index.ts',
-      includeDefineCustomElements: true,
-    })
+    }
   ],
   //add postcss as a plugin
   plugins: [
