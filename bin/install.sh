@@ -8,7 +8,7 @@ cd node_modules/@planit/design-system/bin
 node edit-package-json.js $1 $2
 cd ../../../..
 cp -R node_modules/@planit/design-system/. ./
-rm -rf ./bin package.json scripts
+rm -rf ./bin package.json scripts/deploy* scripts/edit*
 cp package-tmp.json package.json
 rm -rf package-tmp.json
 cp gitignore .gitignore
