@@ -18,7 +18,7 @@ export const config: Config = {
   namespace: 'design-system',
   outputTargets: [
     react({
-      componentCorePackage: '@planit/design-system-web-components',
+      componentCorePackage: 'design-system-web-components',
       proxiesFile: '../stencil-react-wrappers/src/components/stencil-generated/index.ts',
       includeDefineCustomElements: true,
     }),

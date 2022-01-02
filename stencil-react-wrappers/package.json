@@ -1,5 +1,5 @@
 {
-  "name": "stencil-react-wrappers",
+  "name": "design-system-react-wrappers",
   "sideEffects": false,
   "version": "0.0.1",
   "private": true,
@@ -19,7 +19,8 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist/", "tsconfig.json"
+    "dist/",
+    "tsconfig.json"
   ],
   "devDependencies": {
     "@types/jest": "23.3.9",
@@ -34,7 +35,7 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "@planit/design-system-web-components": "file:../stencil-web-components"
+    "design-system-web-components": "file:../stencil-web-components"
   },
   "peerDependencies": {
     "react": "^17.0.2",

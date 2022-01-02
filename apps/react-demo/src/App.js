@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { MyComponent } from 'stencil-react-wrappers';
+import { MyComponent } from 'design-system-react-wrappers';
 
 function App() {
   return (

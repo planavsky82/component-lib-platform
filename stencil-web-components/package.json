@@ -1,5 +1,5 @@
 {
-  "name": "@planit/design-system-web-components",
+  "name": "design-system-web-components",
   "version": "0.0.106",
   "description": "Design System Starter",
   "main": "dist/index.cjs.js",
@@ -47,17 +47,8 @@
     "puppeteer": "^10.0.0",
     "tailwindcss": "^3.0.7"
   },
-  "author": "Anthony Planavsky",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/planavsky82/design-system.git"
-  },
-  "bugs": {
-    "url": "https://github.com/planavsky82/design-system/issues"
-  },
-  "homepage": "https://github.com/planavsky82/design-system#readme"
+  }
 }
