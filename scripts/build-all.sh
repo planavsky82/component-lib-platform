@@ -6,4 +6,4 @@ npm run build
 cd ../apps/react-demo
 rm -rf node_modules
 npm i
-cd ..
+npm start
