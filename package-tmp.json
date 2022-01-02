@@ -1,0 +1,18 @@
+{
+  "name": "@planit/design-system",
+  "version": "0.0.121",
+  "description": "Design System Starter",
+  "scripts": {
+    "deploy:patch": "./scripts/deploy.sh patch",
+    "deploy:minor": "./scripts/deploy.sh minor",
+    "deploy:major": "./scripts/deploy.sh major",
+    "start": "run-p build-stencil:watch storybook",
+    "build:all": "./scripts/build-all.sh"
+  },
+  "author": "Anthony Planavsky",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {}
+}
