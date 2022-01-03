@@ -14,6 +14,7 @@
     "build": "stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
     "start": "run-p build-stencil:watch storybook",
     "start:dev": "stencil build --dev --watch --serve",
+    "intro": "build-stencil:watch",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
