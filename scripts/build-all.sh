@@ -3,3 +3,4 @@
 cd stencil-web-components
 npm i
 npm run build
+npm run intro
