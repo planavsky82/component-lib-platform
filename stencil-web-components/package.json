@@ -14,14 +14,15 @@
     "build": "stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
     "start": "run-p build-stencil:watch storybook",
     "start:dev": "stencil build --dev --watch --serve",
-    "intro": "npm run build-stencil:watch",
+    "intro": "npm run build:tailwind && stencil build --docs-readme --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006 -s dist",
     "build-storybook": "build-storybook",
-    "build-stencil:watch": "stencil build --docs-readme --watch --serve",
-    "build:react-wrappers": "scripts/build-react-wrappers.sh"
+    "build-stencil:watch": "stencil build --docs-readme --watch",
+    "build:react-wrappers": "scripts/build-react-wrappers.sh",
+    "build:tailwind": "postcss css/styles.css -o src/build/styles.css"
   },
   "dependencies": {
     "@stencil/core": "^2.11.0"
@@ -37,13 +38,14 @@
     "@storybook/addon-links": "^6.4.9",
     "@storybook/html": "^6.4.9",
     "@types/jest": "^26.0.24",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.1",
     "babel-loader": "^8.2.3",
     "cssnano": "^5.0.14",
     "jest": "^26.6.3",
     "jest-cli": "^26.6.3",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.5",
+    "postcss-cli": "^9.1.0",
     "postcss-replace": "^1.1.3",
     "puppeteer": "^10.0.0",
     "tailwindcss": "^3.0.7"
