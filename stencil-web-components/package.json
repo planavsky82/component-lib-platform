@@ -22,7 +22,7 @@
     "build-storybook": "build-storybook",
     "build-stencil:watch": "stencil build --docs-readme --watch",
     "build:react-wrappers": "scripts/build-react-wrappers.sh",
-    "build:tailwind": "postcss css/styles.css -o src/build/styles.css"
+    "build:tailwind": "postcss css/styles.css -w -o src/build/styles.css"
   },
   "dependencies": {
     "@stencil/core": "^2.11.0"
