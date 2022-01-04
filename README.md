@@ -12,4 +12,6 @@ There are various parts of a design system that are necessary:
 4. Development documentation with rich examples of component utilization within an application
 5. A CSS framework that defines tokens utilized by the design tooling and component library
 
+A design system is *not* purely technical, so this NPM package is *not* everything you need. It focues on numbers 3, 4, and 5. When a development platform is paired with an equally strong design platform, its a recipe for success.
+
 
