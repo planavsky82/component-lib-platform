@@ -14,8 +14,12 @@ There are various parts of a design system that are necessary:
 
 A design system is *not* purely technical, so this NPM package is *not* everything you need. It focues on numbers 3, 4, and 5. When a development platform is paired with an equally strong design platform, it's a recipe for success.
 
+## Prerequisites 
+
 ## Installation
 
 Run `npx @planit/design-system <your-project-name>` to install the project.
+
+## Documentation 
 
 
