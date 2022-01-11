@@ -16,10 +16,20 @@ A design system is *not* purely technical, so this NPM package is *not* everythi
 
 ## Prerequisites 
 
+Before you install, please make sure you are have a [Node.js LTS Version](https://nodejs.org/en/about/releases/) installed on your machine.
+
 ## Installation
 
 Run `npx @planit/design-system <your-project-name>` to install the project.
 
-## Documentation 
+If you do not pass a project name, a default name will be provided.
+
+You may also provide an author name if you'd like:
+
+`npx @planit/design-system <your-project-name> <author-name>`
+
+## Documentation
+
+When the package is installed, a ***Get Started*** application will launch in your browser window with instructions on how to start building your design system platform.
 
 
