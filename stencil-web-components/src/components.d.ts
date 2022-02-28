@@ -20,6 +20,8 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PlanitContainer {
+    }
 }
 declare global {
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
@@ -28,8 +30,15 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPlanitContainerElement extends Components.PlanitContainer, HTMLStencilElement {
+    }
+    var HTMLPlanitContainerElement: {
+        prototype: HTMLPlanitContainerElement;
+        new (): HTMLPlanitContainerElement;
+    };
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
+        "planit-container": HTMLPlanitContainerElement;
     }
 }
 declare namespace LocalJSX {
@@ -47,8 +56,11 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PlanitContainer {
+    }
     interface IntrinsicElements {
         "my-component": MyComponent;
+        "planit-container": PlanitContainer;
     }
 }
 export { LocalJSX as JSX };
@@ -56,6 +68,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "planit-container": LocalJSX.PlanitContainer & JSXBase.HTMLAttributes<HTMLPlanitContainerElement>;
         }
     }
 }
