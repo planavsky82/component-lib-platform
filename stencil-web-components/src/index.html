@@ -13,18 +13,68 @@
     <main class="m-4">
       <h1 class="text-5xl text-center font-semibold">Get Started with Your Design System</h1>
 
-      <p>This is the start point for your design system development platform. The following assets are included:</p>
+      <p>This is the start point for your design system development platform.</p>
+
+      <p>Before you start working ...</p>
+
+      <ol>
+        <li>Create your project and author name if you haven't done so already but editing your root-level <code>package.json</code>.</li>
+
+        <code>
+            {<br />
+            &nbsp;"name": "my-design-system",<br />
+            &nbsp;...<br />
+            &nbsp;"author": "",<br />
+            &nbsp;...<br />
+            }
+        </code>
+
+        <li>Also change the <code>name</code> property in the <code>/stencil-web-components/package.json</code> and
+          <code>/stencil-react-wrappers/package.json</code> to something that fits your design system convention.</li>
+
+        <li>Finally, make sure the <code>componentCorePackage</code> property in the <code>/stencil-web-components/stencil.config.ts</code>
+          matches the <code>name</code> property in <code>/stencil-web-components/package.json</code>.</li>
+      </ol>
+
+      <p>You can start learning how to develop the design system by editing this
+          page (<code>/stencil-web-components/src/index.html</code>). The following assets will help:</p>
 
       <ul>
-        <li><a href="#stencil">StencilJS Web Component Library</a> - </li>
-        <li><a href="#stencil">React Component Wrappers for Web Components</a> - </li>
-        <li><a href="#stencil">Storybook Documentation and Demo</a> - </li>
-        <li><a href="#stencil">React Pattern Demo</a> - </li>
-        <li><a href="#stencil">TailwindCSS</a> - </li>
+        <li><a href="#stencil">Storybook for StencilJS Component Library</a> - </li>
+        <li><a href="#react-demo">React Pattern Demo</a> - </li>
+        <li><a href="#tailwind">TailwindCSS</a> - </li>
       </ul>
 
       <a name="stencil"></a>
-      <h2>StencilJS Component Library</h2>
+      <h2>Storybook for StencilJS Component Library</h2>
+      <section>
+        <p>Description Description Description Description Description Description Description</p>
+        <p><code>cd</code> into <code>/stencil-web-components/</code> and run <code>npm start</code>. Then
+          <a href="http://localhost:6006/" target="_blank">View Storybook</a>.</p>
+      </section>
+
+      <a name="react-demo"></a>
+      <h2>React Pattern Demo</h2>
+      <section>
+        <p>Description Description Description Description Description Description Description</p>
+        <p><code>cd</code> into <code>/apps/react-demo/</code> and run <code>npm i && npm start</code>. Then
+          <a href="http://localhost:3000/" target="_blank">View the React Pattern Demo</a>.</p>
+
+        <h3>React Component Wrappers for Web Components</h3>
+        <p>Description Description Description Description Description Description Description. The web components can then
+          <a href="https://github.com/planavsky82/design-system/blob/main/apps/react-demo/src/App.js#L8" target="_blank">be
+          utilized as React components</a>.
+        </p>
+      </section>
+
+      <a name="tailwind"></a>
+      <h2>TailwindCSS</h2>
+      <section>
+        <p>Description Description Description Description Description Description Description.
+          The design system utilizes a <a href="https://tailwindcss.com/" target="_blank">utility-first CSS framework</a>.
+          There is a great resource for the classes at
+          <a href="https://nerdcave.com/tailwind-cheat-sheet" target="_blank">nerdcave.com/tailwind-cheat-sheet</a>.</p>
+      </section>
 
       <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
     </main>
