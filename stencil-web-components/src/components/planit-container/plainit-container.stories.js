@@ -1,9 +1,9 @@
 import {text} from '@storybook/addon-knobs';
 
 export default {
-  title: 'Demo/Container',
+  title: 'Demo',
 };
 
-export const PlanitContainer = () => {
+export const Container = () => {
   return `<planit-container>abc</planit-container>`;
 };
