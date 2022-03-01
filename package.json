@@ -1,6 +1,6 @@
 {
   "name": "@planit/component-lib-platform",
-  "version": "0.0.149",
+  "version": "0.0.150",
   "description": "Component Library Platform Starter",
   "scripts": {
     "deploy:patch": "./scripts/deploy.sh patch",
