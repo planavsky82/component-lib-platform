@@ -2,12 +2,12 @@ echo 'Beginning design system install ...'
 
 rm -rf package.json package-lock.json node_modules
 
-npm i @planit/design-system --save-dev
+npm i @planit/component-lib-platform --save-dev
 
-cd node_modules/@planit/design-system/bin
+cd node_modules/@planit/component-lib-platform/bin
 node edit-package-json.js $1 $2
 cd ../../../..
-cp -R node_modules/@planit/design-system/. ./
+cp -R node_modules/@planit/component-lib-platform/. ./
 rm -rf ./bin package.json scripts/deploy* scripts/edit*
 cp package-tmp.json package.json
 rm -rf package-tmp.json
