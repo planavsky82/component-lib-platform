@@ -1,4 +1,4 @@
-echo 'Beginning design system install ...'
+echo 'Beginning component library platform install ...'
 
 rm -rf package.json package-lock.json node_modules
 
