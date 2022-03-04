@@ -11,7 +11,7 @@
   </head>
   <body>
     <main class="m-4">
-      <h1 class="text-5xl text-center font-semibold">Get Started with Your Component Library Platform</h1>
+      <h1 class="text-5xl text-center font-semibold mb-4">Get Started with Your Component Library Platform</h1>
 
       <p>This is the start point for your component library.</p>
 
@@ -20,7 +20,7 @@
       <ol>
         <li>Create your project and author name if you haven't done so already but editing your root-level <code>package.json</code>.</li>
 
-        <code>
+        <code class="bg-gray-200">
             {<br />
             &nbsp;"name": "my-design-system",<br />
             &nbsp;...<br />
@@ -29,67 +29,68 @@
             }
         </code>
 
-        <li>Also change the <code>name</code> property in the <code>/stencil-web-components/package.json</code> and
-          <code>/stencil-react-wrappers/package.json</code> to something that fits your component library convention.</li>
+        <li>Also change the <code class="bg-gray-200">name</code> property in the <code class="bg-gray-200">/stencil-web-components/package.json</code> and
+          <code class="bg-gray-200">/stencil-react-wrappers/package.json</code> to something that fits your component library convention.</li>
 
-        <li>Finally, make sure the <code>componentCorePackage</code> property in the <code>/stencil-web-components/stencil.config.ts</code>
-          matches the <code>name</code> property in <code>/stencil-web-components/package.json</code>.</li>
+        <li>Finally, make sure the <code class="bg-gray-200">componentCorePackage</code> property in the <code class="bg-gray-200">/stencil-web-components/stencil.config.ts</code>
+          matches the <code class="bg-gray-200">name</code> property in <code class="bg-gray-200">/stencil-web-components/package.json</code>.</li>
       </ol>
 
       <p>You can start learning how to develop the component library platform by editing this
-          page (<code>/stencil-web-components/src/index.html</code>). The following assets will help:</p>
+          page (<code class="bg-gray-200">/stencil-web-components/src/index.html</code>). The following assets will help:</p>
 
-      <ul>
-        <li><a href="#stencil">Storybook for StencilJS Component Library</a></li>
-        <li><a href="#react-demo">React Pattern Demo</a></li>
-        <li><a href="#tailwind">TailwindCSS</a></li>
-        <li><a href="#tailwind">Building a Micro Frontend</a></li>
+      <ul class="mt-3">
+        <li><a href="#stencil" class="text-blue-700 underline">Storybook for StencilJS Component Library</a></li>
+        <li><a href="#react-demo" class="text-blue-700 underline">React Pattern Demo</a></li>
+        <li><a href="#tailwind" class="text-blue-700 underline">TailwindCSS</a></li>
+        <li><a href="#mfe" class="text-blue-700 underline">Building a Micro Frontend</a></li>
       </ul>
 
       <a name="stencil"></a>
-      <h2>Storybook for StencilJS Component Library</h2>
+      <h2 class="text-3xl my-3">Storybook for StencilJS Component Library</h2>
       <section>
         <p>Description Description Description Description Description Description Description</p>
 
-        <p><a href="http://localhost:6006/" target="_blank">View Storybook</a> - this will run automatically on initial install.</p>
+        <p><a href="http://localhost:6006/" target="_blank" class="text-blue-700 underline">View Storybook</a> - this will run automatically on initial install.</p>
 
-        <p>To start Storybook again in the future, <code>cd</code> into <code>/stencil-web-components/</code> and
-          run <code>npm i && npm start</code>.</p>
+        <p>To start Storybook again in the future, <code class="bg-gray-200">cd</code> into <code class="bg-gray-200">/stencil-web-components/</code> and
+          run <code class="bg-gray-200">npm i && npm start</code>.</p>
       </section>
 
       <a name="react-demo"></a>
-      <h2>React Pattern Demo</h2>
+      <h2 class="text-3xl my-3">React Pattern Demo</h2>
       <section>
         <p>Description Description Description Description Description Description Description</p>
 
-        <p><a href="http://localhost:3000/" target="_blank">View React Pattern Demo</a> - this will run automatically on initial install.</p>
+        <p><a href="http://localhost:3000/" target="_blank" class="text-blue-700 underline">View React Pattern Demo</a> - this will run automatically on initial install.</p>
 
-        <p>To start the React Pattern Demo again in the future, <code>cd</code> into <code>/apps/react-demo/</code> and
-          run <code>npm i && npm start</code>.</p>
+        <p>To start the React Pattern Demo again in the future, <code class="bg-gray-200">cd</code> into <code class="bg-gray-200">/apps/react-demo/</code> and
+          run <code class="bg-gray-200">npm i && npm start</code>.</p>
 
         <h3>React Component Wrappers for Web Components</h3>
         <p>Description Description Description Description Description Description Description. The web components can then
-          <a href="https://github.com/planavsky82/design-system/blob/main/apps/react-demo/src/App.js#L8" target="_blank">be
-          utilized as React components</a>.
+          <a href="https://github.com/planavsky82/design-system/blob/main/apps/react-demo/src/App.js#L8" target="_blank" class="text-blue-700 underline">be utilized as
+            React components</a>.
         </p>
       </section>
 
       <a name="tailwind"></a>
-      <h2>TailwindCSS</h2>
+      <h2 class="text-3xl my-3">TailwindCSS</h2>
       <section>
         <p>Description Description Description Description Description Description Description.
-          The component library platform utilizes a <a href="https://tailwindcss.com/" target="_blank">utility-first CSS framework</a>.
+          The component library platform utilizes a
+          <a href="https://tailwindcss.com/" target="_blank" class="text-blue-700 underline">utility-first CSS framework</a>.
           There is a great resource for the classes at
-          <a href="https://nerdcave.com/tailwind-cheat-sheet" target="_blank">nerdcave.com/tailwind-cheat-sheet</a>.</p>
+          <a href="https://nerdcave.com/tailwind-cheat-sheet" target="_blank" class="text-blue-700 underline">nerdcave.com/tailwind-cheat-sheet</a>.</p>
       </section>
 
       <a name="mfe"></a>
-      <h2>Building a Micro Frontend</h2>
+      <h2 class="text-3xl my-3">Building a Micro Frontend</h2>
       <section>
           The platform also can be used to generate a <a href="https://micro-frontends.org/" target="_blank">Micro Frontend</a>,
           a more complex web component that is esentially its own micro-application and can be shared across other frontend applications.
           There is an example of a web component being used as a mirco frontend in the
-          <a href="http://localhost:3000/" target="_blank">React Pattern Demo</a>.</p>
+          <a href="http://localhost:3000/" target="_blank" class="text-blue-700 underline">React Pattern Demo</a>.</p>
       </section>
 
       <planit-container></planit-container>
