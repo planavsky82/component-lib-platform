@@ -9,7 +9,7 @@ A key part of a design system is an extenstive component library to implement th
 
 ### Applications
 
-The platform also can be used to generate a [Micro Frontend](https://micro-frontends.org/), a more complex web component that is esentially its own micro-application and can be shared across other front-end applications. 
+The platform also can be used to generate a [Micro Frontend](https://micro-frontends.org/), a more complex web component that is esentially its own micro-application and can be shared across other frontend applications. 
 
 ## Prerequisites 
 

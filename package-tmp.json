@@ -1,0 +1,17 @@
+{
+  "name": "@planit/component-lib-platform",
+  "version": "0.0.154",
+  "description": "Component Library Platform Starter",
+  "scripts": {
+    "deploy:patch": "./scripts/deploy.sh patch",
+    "deploy:minor": "./scripts/deploy.sh minor",
+    "deploy:major": "./scripts/deploy.sh major",
+    "build:all": "./scripts/build-all.sh"
+  },
+  "author": "Anthony Planavsky",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {}
+}
