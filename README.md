@@ -5,7 +5,7 @@ Start your own component library platform in minutes!
 
 As explained by the [Nielsen Norman Group](https://www.nngroup.com/articles/design-systems-101/), a design system is a set of standards to manage design at scale by reducing redundancy while creating a shared language and visual consistency across different pages and channels.
 
-A key part of a design system is an extenstive component library to implement the system standards and abstract patterns to ensure consistency across applications. `@planit/component-lib-platform` will automatically set up a component library development platform in just a few minutes. It includes a [web component](https://developer.mozilla.org/en-US/docs/Web/Web_Components) starter library, a [TailwindCSS](https://tailwindcss.com/) configuration, [Storybook.js](https://storybook.js.org/), and a demo application.
+A key part of a design system is an extenstive component library to implement the system standards and abstract patterns to ensure consistency across applications. `@planit/component-lib-platform` will automatically set up a component library development platform in just a few minutes. It includes a [Stencil web component](https://stenciljs.com/docs/introduction) starter library, a [TailwindCSS](https://tailwindcss.com/) configuration, [Storybook.js](https://storybook.js.org/), and a demo application.
 
 ### Applications
 
