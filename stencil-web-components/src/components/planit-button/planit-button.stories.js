@@ -5,5 +5,5 @@ export default {
 };
 
 export const Button = () => {
-  return `<planit-button>abc</planit-button>`;
+  return `<planit-button></planit-button>`;
 };

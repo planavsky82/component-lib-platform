@@ -1,3 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :host {
   display: block;
+}
+
+:host button {
+  @apply bg-indigo-600;
+  @apply text-white;
+  @apply w-full;
+  @apply transition;
+  @apply ease-in;
+  @apply duration-200;
+  @apply text-center;
+  @apply text-base;
+  @apply font-semibold;
+  @apply shadow-md;
 }
