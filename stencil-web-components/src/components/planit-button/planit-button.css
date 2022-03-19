@@ -7,6 +7,8 @@
 }
 
 :host button {
+  @apply py-2;
+  @apply px-4;
   @apply bg-indigo-600;
   @apply text-white;
   @apply w-full;
@@ -17,4 +19,17 @@
   @apply text-base;
   @apply font-semibold;
   @apply shadow-md;
+  @apply rounded-lg;
+}
+
+:host button:focus {
+  @apply ring-indigo-500;
+  @apply ring-offset-indigo-200;
+  @apply outline-none;
+  @apply ring-2;
+  @apply ring-offset-2;
+}
+
+:host button:hover {
+  @apply bg-indigo-700;
 }
