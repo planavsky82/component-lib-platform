@@ -10,6 +10,9 @@ describe('planit-button', () => {
     expect(page.root).toEqualHtml(`
       <planit-button>
         <mock:shadow-root>
+          <button type="button">
+            Valider
+          </button>
           <slot></slot>
         </mock:shadow-root>
       </planit-button>
