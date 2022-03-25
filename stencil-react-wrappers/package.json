@@ -1,5 +1,5 @@
 {
-  "name": "design-system-react-wrappers",
+  "name": "component-lib-platform-react-wrappers",
   "sideEffects": false,
   "version": "0.0.1",
   "private": true,
@@ -35,7 +35,7 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "design-system-web-components": "file:../stencil-web-components"
+    "component-lib-platform-web-components": "file:../stencil-web-components"
   },
   "peerDependencies": {
     "react": "^17.0.2",

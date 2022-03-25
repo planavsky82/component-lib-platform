@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { MyComponent } from 'design-system-react-wrappers';
+import { MyComponent } from 'component-lib-platform-react-wrappers';
 
 function App() {
   return (

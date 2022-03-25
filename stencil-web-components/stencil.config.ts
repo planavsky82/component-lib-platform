@@ -15,10 +15,10 @@ const purge = purgecss({
   defaultExtractor: (content) => content.match(/[A-Za-z0-9-_:/]+/g) || [],
 });
 export const config: Config = {
-  namespace: 'design-system',
+  namespace: 'component-lib-platform',
   outputTargets: [
     react({
-      componentCorePackage: 'design-system-web-components',
+      componentCorePackage: 'component-lib-platform-web-components',
       proxiesFile: '../stencil-react-wrappers/src/components/stencil-generated/index.ts',
       includeDefineCustomElements: true,
     }),
