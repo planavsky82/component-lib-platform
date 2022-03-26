@@ -14,15 +14,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "bin": "bin/install.sh",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/planavsky82/component-lib-platform.git"
-  },
-  "bugs": {
-    "url": "https://github.com/planavsky82/component-lib-platform/issues"
-  },
-  "homepage": "https://github.com/planavsky82/component-lib-platform#readme",
   "devDependencies": {
     "@axe-core/playwright": "^4.4.2",
     "@playwright/test": "^1.20.1",
