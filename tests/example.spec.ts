@@ -1,5 +1,8 @@
 import { test, expect, Page } from '@playwright/test';
 
+const AxeBuilder = require('@axe-core/playwright').default;
+const playwright = require('playwright');
+
 test.beforeEach(async ({ page }) => {
   await page.goto('https://demo.playwright.dev/todomvc');
 });
@@ -32,6 +35,9 @@ test.describe('New Todo', () => {
     ]);
 
     await checkNumberOfTodosInLocalStorage(page, 2);
+
+    const results = await new AxeBuilder({ page }).analyze();
+    console.log(results);
   });
 
   test('should clear text input field when an item is added', async ({ page }) => {
