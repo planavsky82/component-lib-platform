@@ -1,13 +1,12 @@
 module.exports = {
   important: true,
-  content: ["./src/index.html"],
   darkMode: "class",
   i18n: {
     locales: ["en-US"],
     defaultLocale: "en-US",
   },
   purge: {
-    content: ["./pages/**/*.tsx", "./components/**/*.tsx"]
+    content: ["./pages/**/*.tsx", "./components/**/*.tsx", "./src/index.html"]
     // These options are passed through directly to PurgeCSS
   },
   theme: {
