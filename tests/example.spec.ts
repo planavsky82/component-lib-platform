@@ -14,6 +14,11 @@ const TODO_ITEMS = [
 ];
 
 test.describe('New Todo', () => {
+  test('should eun a11y testing', async ({ page }) => {
+    const results = await new AxeBuilder({ page }).analyze();
+    console.log(results);
+  });
+
   test('should allow me to add todo items', async ({ page }) => {
     // Create 1st todo.
     await page.locator('.new-todo').fill(TODO_ITEMS[0]);
@@ -35,9 +40,6 @@ test.describe('New Todo', () => {
     ]);
 
     await checkNumberOfTodosInLocalStorage(page, 2);
-
-    const results = await new AxeBuilder({ page }).analyze();
-    console.log(results);
   });
 
   test('should clear text input field when an item is added', async ({ page }) => {
