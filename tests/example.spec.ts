@@ -15,7 +15,7 @@ const TODO_ITEMS = [
 test.describe('New Todo', () => {
   test('should eun a11y testing', async ({ page }) => {
     const results = await new AxeBuilder({ page }).analyze();
-    console.log(results);
+    console.log(results.violations);
   });
 
   /* test('should allow me to add todo items', async ({ page }) => {
