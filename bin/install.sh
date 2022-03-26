@@ -14,6 +14,7 @@ rm -rf package-tmp.json
 cp gitignore .gitignore
 rm -rf gitignore
 
+npm i
 npm run build:all
 
 echo 'Installation Complete.'
