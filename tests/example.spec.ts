@@ -16,6 +16,7 @@ test.describe('New Todo', () => {
   test('should eun a11y testing', async ({ page }) => {
     const results = await new AxeBuilder({ page }).analyze();
     console.log(results.violations);
+    expect(results.violations.length).toEqual(0);
   });
 
   /* test('should allow me to add todo items', async ({ page }) => {
