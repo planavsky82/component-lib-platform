@@ -5,8 +5,9 @@ export default {
 };
 
 export const Button = () => {
-  return `<main>
-    <h1>Button</h1>
+  return `
+  <main>
+    <h1 class="text-color-red-400">Button</h1>
     <planit-button></planit-button>
   </main>`;
 };
