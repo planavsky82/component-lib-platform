@@ -13,6 +13,5 @@ export const Button = () => {
       <planit-button class="mb-3"></planit-button>
       <planit-button class="mb-3"></planit-button>
     </section>
-
   </main>`;
 };

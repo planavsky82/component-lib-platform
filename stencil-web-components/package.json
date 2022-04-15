@@ -12,9 +12,9 @@
   "unpkg": "dist/component-lib-platform/component-lib-platform.esm.js",
   "scripts": {
     "build": "stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
-    "start": "run-p build:tailwind build-stencil:watch storybook",
+    "start": "run-p build:tailwind:watch build-stencil:watch storybook",
     "start:dev": "stencil build --dev --watch --serve",
-    "intro": "run-p build:tailwind react-demo:serve storybook:no-open intro:serve",
+    "intro": "run-p build:tailwind:watch react-demo:serve storybook:no-open intro:serve",
     "intro:serve": "stencil build --docs-readme --watch --serve",
     "react-demo:serve": "cd ../apps/react-demo && npm i && npm start",
     "test": "stencil test --spec --e2e",
@@ -22,10 +22,11 @@
     "generate": "stencil generate",
     "storybook": "start-storybook -p 6006 -s dist --no-manager-cache",
     "storybook:no-open": "start-storybook -p 6006 -s dist --ci",
-    "build-storybook": "build-storybook",
+    "build-storybook": "npm run build:tailwind && stencil build --docs && build-storybook",
     "build-stencil:watch": "stencil build --docs-readme --watch",
     "build:react-wrappers": "scripts/build-react-wrappers.sh",
-    "build:tailwind": "postcss css/styles.css -w -o src/build/styles.css"
+    "build:tailwind:watch": "postcss css/styles.css -w -o src/build/styles.css",
+    "build:tailwind": "postcss css/styles.css -o src/build/styles.css"
   },
   "dependencies": {
     "@stencil/core": "^2.11.0"
