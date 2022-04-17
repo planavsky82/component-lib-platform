@@ -8,7 +8,7 @@ cd node_modules/@planit/component-lib-platform/bin
 node edit-package-json.js $1 $2
 cd ../../../..
 cp -R node_modules/@planit/component-lib-platform/. ./
-rm -rf ./bin package.json scripts/deploy* scripts/edit*
+rm -rf ./bin package.json scripts/deploy* scripts/edit* ./.firebase ./.github .firebaserc firebase.json
 cp package-tmp.json package.json
 rm -rf package-tmp.json
 cp gitignore .gitignore
