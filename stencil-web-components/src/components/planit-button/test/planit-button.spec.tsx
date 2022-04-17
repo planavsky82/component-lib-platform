@@ -11,7 +11,7 @@ describe('planit-button', () => {
       <planit-button>
         <mock:shadow-root>
           <button type="button">
-            Valider
+            Valider!
           </button>
           <slot></slot>
         </mock:shadow-root>

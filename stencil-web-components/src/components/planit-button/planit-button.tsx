@@ -11,7 +11,7 @@ export class PlanitButton {
     return (
       <Host>
         <button type="button">
-          Valider
+          Valider!
         </button>
         <slot></slot>
       </Host>
