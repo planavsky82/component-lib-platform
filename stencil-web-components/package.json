@@ -12,6 +12,7 @@
   "unpkg": "dist/component-lib-platform/component-lib-platform.esm.js",
   "scripts": {
     "build": "stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
+    "build:all": "../scripts/build-all.sh",
     "start": "run-p build:tailwind:watch build-stencil:watch storybook",
     "start:dev": "stencil build --dev --watch --serve",
     "intro": "run-p build:tailwind:watch react-demo:serve storybook:no-open intro:serve",
