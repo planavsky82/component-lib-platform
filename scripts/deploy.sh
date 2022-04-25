@@ -19,4 +19,13 @@ git add -A
 git commit -m "chore(release): $1"
 git push
 
+echo 'Build and Publishing @planit/components NPM Package ...'
+pushd stencil-web-components
+npm run build
+pushd dist
+node ../../scripts/edit-components-package-json.js
+npm publish
+popd
+popd
+
 echo 'Deployment Complete.'
