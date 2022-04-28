@@ -30,7 +30,6 @@ popd
 popd
 
 pushd stencil-react-components
-npm run build
 pushd dist
 node ../../scripts/edit-components-package-json.js react-components
 npm publish
