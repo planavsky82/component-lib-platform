@@ -29,12 +29,10 @@ npm publish
 popd
 popd
 
-pushd stencil-react-components
-ls
+pushd stencil-react-wrappers
 pushd dist
-ls
-#node ../../scripts/edit-components-package-json.js react-components
-#npm publish
+node ../../scripts/edit-components-package-json.js react-components
+npm publish
 popd
 popd
 
