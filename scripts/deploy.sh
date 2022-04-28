@@ -31,6 +31,7 @@ popd
 
 pushd stencil-react-components
 npm run build
+cp package.json dist/package.json
 pushd dist
 node ../../scripts/edit-components-package-json.js react-components
 npm publish
