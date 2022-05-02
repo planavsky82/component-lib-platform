@@ -4,7 +4,7 @@ let fs = require('fs');
 let args = process.argv.slice(2);
 
 const packageJson = JSON.parse(fs.readFileSync('./package.json', { encoding:'utf8' }));
-const rootPackageJson = JSON.parse(fs.readFileSync('../../package.json', { encoding:'utf8' }));
+const rootPackageJson = JSON.parse(fs.readFileSync('../package.json', { encoding:'utf8' }));
 packageJson.name = '@planit/' + args[0];
 
 if (args[0] === 'react-components') {
