@@ -30,7 +30,7 @@ popd
 popd
 
 pushd stencil-react-wrappers
-node ../../scripts/edit-components-package-json.js react-components
+node ../scripts/edit-components-package-json.js react-components
 npm publish
 popd
 
