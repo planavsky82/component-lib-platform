@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { MyComponent } from 'component-lib-platform-react-wrappers';
+import { MyComponent } from '@planit/react-components';
 
 function App() {
   return (

@@ -18,7 +18,7 @@ export const config: Config = {
   namespace: 'component-lib-platform',
   outputTargets: [
     react({
-      componentCorePackage: 'component-lib-platform-web-components',
+      componentCorePackage: '@planit/components',
       proxiesFile: '../stencil-react-wrappers/src/components/stencil-generated/index.ts',
       includeDefineCustomElements: true,
     }),

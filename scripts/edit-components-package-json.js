@@ -13,7 +13,7 @@ packageJson.name = '@planit/' + args[0];
 
 if (args[0] === 'react-components') {
   packageJson.dependencies['@planit/components'] = rootPackageJson.version;
-  delete packageJson.dependencies['component-lib-platform-web-components'];
+  delete packageJson.dependencies['@planit/components'];
 }
 
 packageJson.version = rootPackageJson.version;
