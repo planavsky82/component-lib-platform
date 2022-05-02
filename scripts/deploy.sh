@@ -30,10 +30,8 @@ popd
 popd
 
 pushd stencil-react-wrappers
-pushd dist
 node ../../scripts/edit-components-package-json.js react-components
 npm publish
-popd
 popd
 
 echo 'Deployment Complete.'
