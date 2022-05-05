@@ -11,7 +11,7 @@
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/component-lib-platform/component-lib-platform.esm.js",
   "scripts": {
-    "build": "stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
+    "build": "npm run build:tailwind && stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
     "build:all": "../scripts/build-all.sh",
     "start": "run-p build:tailwind:watch build-stencil:watch storybook",
     "start:dev": "stencil build --dev --watch --serve",
