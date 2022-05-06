@@ -10,7 +10,8 @@
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.2",
-    "@planit/react-components": "../../stencil-react-wrappers"
+    "@planit/react-components": "../../stencil-react-wrappers",
+    "@planit/components": "../../stencil-web-components/dist"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",

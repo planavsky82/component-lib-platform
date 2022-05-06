@@ -16,7 +16,7 @@
     "build:basic": "stencil build --docs",
     "start": "npm-run-all --serial build:tailwind build:basic --parallel build:tailwind:watch build-stencil:watch storybook",
     "start:dev": "stencil build --dev --watch --serve",
-    "intro": "run-p build:tailwind:watch react-demo:serve storybook:no-open intro:serve",
+    "intro": "npm-run-all --serial build --parallel build:tailwind:watch react-demo:serve storybook:no-open intro:serve",
     "intro:serve": "stencil build --docs-readme --watch --serve",
     "react-demo:serve": "cd ../apps/react-demo && npm i && npm start",
     "test": "stencil test --spec --e2e",

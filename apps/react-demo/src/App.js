@@ -1,11 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
 import { MyComponent } from '@planit/react-components';
+import { defineCustomElements } from '@planit/components/esm/loader';
+defineCustomElements();
 
 function App() {
   return (
     <div className="App">
       <MyComponent first="AAAAAAAA" middle="BBBBBBBB" last="CCCCCCCC"></MyComponent>
+      <planit-button></planit-button>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
