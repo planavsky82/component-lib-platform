@@ -14,7 +14,7 @@
     "build": "npm run build:tailwind && stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
     "build:all": "../scripts/build-all.sh",
     "build:basic": "stencil build --docs",
-    "start": "npm-run-all --serial build:basic --parallel build:tailwind:watch build-stencil:watch storybook",
+    "start": "npm-run-all --serial build:tailwind build:basic --parallel build:tailwind:watch build-stencil:watch storybook",
     "start:dev": "stencil build --dev --watch --serve",
     "intro": "run-p build:tailwind:watch react-demo:serve storybook:no-open intro:serve",
     "intro:serve": "stencil build --docs-readme --watch --serve",
