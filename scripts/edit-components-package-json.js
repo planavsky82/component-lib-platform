@@ -9,11 +9,9 @@ if (args[0] === 'react-components') {
 
 const packageJson = JSON.parse(fs.readFileSync('./package.json', { encoding:'utf8' }));
 const rootPackageJson = JSON.parse(fs.readFileSync(rootPath, { encoding:'utf8' }));
-packageJson.name = '@planit/' + args[0];
 
 if (args[0] === 'react-components') {
   packageJson.dependencies['@planit/components'] = rootPackageJson.version;
-  delete packageJson.dependencies['@planit/components'];
 }
 
 packageJson.version = rootPackageJson.version;
