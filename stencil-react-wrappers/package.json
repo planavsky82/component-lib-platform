@@ -1,7 +1,7 @@
 {
   "name": "@planit/react-components",
   "sideEffects": false,
-  "version": "0.0.203",
+  "version": "0.0.210",
   "private": false,
   "description": "React specific wrapper for component-library",
   "repository": {
@@ -35,7 +35,7 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "@planit/components": "../stencil-web-components"
+    "@planit/components": "0.0.210"
   },
   "peerDependencies": {
     "react": "^17.0.2",
