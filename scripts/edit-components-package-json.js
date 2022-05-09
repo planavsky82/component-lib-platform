@@ -2,7 +2,7 @@
 
 let fs = require('fs');
 let args = process.argv.slice(2);
-let rootPath = '../../package.json';
+let rootPath = '../package.json';
 if (args[0] === 'react-components') {
   rootPath = '../package.json';
 }
