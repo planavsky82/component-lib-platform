@@ -11,7 +11,7 @@
     "react-scripts": "5.0.0",
     "web-vitals": "^2.1.2",
     "@planit/react-components": "../../stencil-react-wrappers",
-    "@planit/components": "../../stencil-web-components/dist"
+    "@planit/components": "../../stencil-web-components"
   },
   "scripts": {
     "start": "BROWSER=none react-scripts start",
