@@ -1,8 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { MyComponent } from '@planit/react-components';
-import { defineCustomElements } from '@planit/components/esm/loader';
-defineCustomElements();
+import '@planit/components/loader';
 
 function App() {
   return (
