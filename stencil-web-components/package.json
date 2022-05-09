@@ -10,6 +10,10 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/component-lib-platform/component-lib-platform.esm.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
   "scripts": {
     "build": "npm run build:tailwind && stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
     "build:all": "../scripts/build-all.sh",
