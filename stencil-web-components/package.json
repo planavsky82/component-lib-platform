@@ -1,6 +1,6 @@
 {
   "name": "@planit/components",
-  "version": "0.0.220",
+  "version": "0.0.223",
   "description": "Component Library Platform Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
