@@ -1,6 +1,6 @@
 {
   "name": "@planit/components",
-  "version": "0.0.224",
+  "version": "0.0.227",
   "description": "Component Library Platform Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -10,10 +10,6 @@
   "collection": "dist/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "unpkg": "dist/component-lib-platform/component-lib-platform.esm.js",
-  "files": [
-    "dist/",
-    "loader/"
-  ],
   "scripts": {
     "build": "npm run build:tailwind && stencil build --docs && npm run build:react-wrappers",
     "build:all": "../scripts/build-all.sh",

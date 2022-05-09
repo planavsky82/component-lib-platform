@@ -10,6 +10,10 @@ if (args[0] === 'react-components') {
 const packageJson = JSON.parse(fs.readFileSync('./package.json', { encoding:'utf8' }));
 const rootPackageJson = JSON.parse(fs.readFileSync(rootPath, { encoding:'utf8' }));
 
+if (args[0] === 'components') {
+  packageJson['files'] = [ "dist/", "loader/" ];
+}
+
 if (args[0] === 'react-components') {
   packageJson.dependencies['@planit/components'] = rootPackageJson.version;
 }
