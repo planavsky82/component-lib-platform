@@ -1,6 +1,6 @@
 {
   "name": "@planit/components",
-  "version": "0.0.217",
+  "version": "0.0.220",
   "description": "Component Library Platform Starter",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
@@ -15,7 +15,7 @@
     "loader/"
   ],
   "scripts": {
-    "build": "npm run build:tailwind && stencil build --docs && cp package.json ./dist && npm run build:react-wrappers",
+    "build": "npm run build:tailwind && stencil build --docs && npm run build:react-wrappers",
     "build:all": "../scripts/build-all.sh",
     "build:basic": "stencil build --docs",
     "start": "npm-run-all --serial build:tailwind build:basic --parallel build:tailwind:watch build-stencil:watch storybook",
