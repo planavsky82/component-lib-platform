@@ -24,7 +24,7 @@ echo 'Build and Publishing @planit/components and @planit/react-components NPM P
 pushd stencil-web-components
 npm run build
 node ../scripts/edit-components-package-json.js components
-popd
+npm publish
 popd
 
 pushd stencil-react-wrappers
