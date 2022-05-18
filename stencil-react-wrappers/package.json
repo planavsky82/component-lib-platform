@@ -1,7 +1,7 @@
 {
   "name": "@planit/react-components",
   "sideEffects": false,
-  "version": "0.0.229",
+  "version": "0.0.230",
   "private": false,
   "description": "React specific wrapper for component-library",
   "repository": {
@@ -35,7 +35,7 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "@planit/components": "0.0.229"
+    "@planit/components": "0.0.230"
   },
   "peerDependencies": {
     "react": "^17.0.2",

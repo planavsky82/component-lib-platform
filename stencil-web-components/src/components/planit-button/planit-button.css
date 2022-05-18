@@ -33,3 +33,41 @@
 :host button:hover {
   @apply bg-indigo-700;
 }
+
+:host(.disabled) button {
+  @apply py-2;
+  @apply px-4;
+  @apply bg-black;
+  @apply text-white;
+  @apply w-full;
+  @apply transition;
+  @apply ease-in;
+  @apply duration-200;
+  @apply text-center;
+  @apply text-base;
+  @apply font-semibold;
+  @apply shadow-md;
+  @apply opacity-70;
+  @apply cursor-not-allowed;
+  @apply rounded-lg;
+}
+
+:host(.disabled) button:focus {
+  @apply ring-gray-500;
+  @apply ring-offset-gray-200;
+  @apply outline-none;
+  @apply ring-2;
+  @apply ring-offset-2;
+}
+
+:host(.disabled) button:hover {
+  @apply bg-gray-700;
+}
+
+/* :host.iconOnly button {
+
+}
+
+:host.primary button {
+
+} */
