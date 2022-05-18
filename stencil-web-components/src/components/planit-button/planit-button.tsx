@@ -1,4 +1,5 @@
-import { Component, Host, h } from '@stencil/core';
+import { Component, Host, h, Prop } from '@stencil/core';
+import { ButtonType } from '../../types/button';
 
 @Component({
   tag: 'planit-button',
@@ -6,14 +7,21 @@ import { Component, Host, h } from '@stencil/core';
   shadow: true,
 })
 export class PlanitButton {
+  @Prop() type: ButtonType = 'secondary';
+  @Prop() icon: string | null;
+  @Prop() iconOnly: boolean = false;
+  @Prop() disabled: boolean = false;
 
   render() {
     return (
-      <Host>
+      <Host class={{
+        'disabled': this.disabled,
+        'iconOnly': this.iconOnly,
+        'primary': this.type === 'primary'
+      }}>
         <button type="button">
-          Valider!
+          <slot></slot>
         </button>
-        <slot></slot>
       </Host>
     );
   }

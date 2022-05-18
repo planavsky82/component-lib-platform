@@ -5,16 +5,16 @@ describe('planit-button', () => {
   it('renders', async () => {
     const page = await newSpecPage({
       components: [PlanitButton],
-      html: `<planit-button></planit-button>`,
+      html: `<planit-button>Button Text</planit-button>`,
     });
     expect(page.root).toEqualHtml(`
       <planit-button>
         <mock:shadow-root>
           <button type="button">
-            Valider!
+            <slot></slot>
           </button>
-          <slot></slot>
         </mock:shadow-root>
+        Button Text
       </planit-button>
     `);
   });

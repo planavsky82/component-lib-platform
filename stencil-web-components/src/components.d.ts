@@ -5,6 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { ButtonType } from "./types/button";
 export namespace Components {
     interface MyComponent {
         /**
@@ -21,6 +22,10 @@ export namespace Components {
         "middle": string;
     }
     interface PlanitButton {
+        "disabled": boolean;
+        "icon": string | null;
+        "iconOnly": boolean;
+        "type": ButtonType;
     }
     interface PlanitContainer {
     }
@@ -66,6 +71,10 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface PlanitButton {
+        "disabled"?: boolean;
+        "icon"?: string | null;
+        "iconOnly"?: boolean;
+        "type"?: ButtonType;
     }
     interface PlanitContainer {
     }
