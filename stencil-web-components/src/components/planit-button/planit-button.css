@@ -9,8 +9,8 @@
 :host button {
   @apply py-2;
   @apply px-4;
-  @apply bg-black;
-  @apply text-white;
+  @apply bg-blue-100;
+  @apply text-black;
   @apply w-full;
   @apply transition;
   @apply ease-in;
@@ -20,24 +20,32 @@
   @apply font-semibold;
   @apply shadow-md;
   @apply rounded-lg;
+  @apply ring-blue-500;
+  @apply ring-2;
 }
 
 :host button:focus {
-  @apply ring-indigo-500;
-  @apply ring-offset-indigo-200;
+  @apply ring-blue-600;
+  @apply ring-offset-blue-200;
   @apply outline-none;
   @apply ring-2;
   @apply ring-offset-2;
 }
 
+:host(.primary) button {
+  @apply bg-blue-800;
+  @apply text-white;
+}
+
 :host button:hover {
-  @apply bg-indigo-700;
+  @apply bg-blue-700;
+  @apply text-white;
 }
 
 :host(.disabled) button {
   @apply py-2;
   @apply px-4;
-  @apply bg-gray-200;
+  @apply bg-gray-400;
   @apply text-black;
   @apply w-full;
   @apply transition;
@@ -50,18 +58,19 @@
   @apply opacity-70;
   @apply cursor-not-allowed;
   @apply rounded-lg;
+  @apply ring-gray-500;
 }
 
 :host(.disabled) button:focus {
   @apply ring-gray-500;
-  @apply ring-offset-gray-200;
+  @apply ring-offset-gray-300;
   @apply outline-none;
   @apply ring-2;
   @apply ring-offset-2;
 }
 
 :host(.disabled) button:hover {
-  @apply bg-gray-200;
+  @apply bg-gray-400;
 }
 
 /* :host.iconOnly button {
