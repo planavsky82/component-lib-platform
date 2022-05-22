@@ -9,7 +9,7 @@
 :host button {
   @apply py-2;
   @apply px-4;
-  @apply bg-indigo-600;
+  @apply bg-black;
   @apply text-white;
   @apply w-full;
   @apply transition;
@@ -37,8 +37,8 @@
 :host(.disabled) button {
   @apply py-2;
   @apply px-4;
-  @apply bg-black;
-  @apply text-white;
+  @apply bg-gray-200;
+  @apply text-black;
   @apply w-full;
   @apply transition;
   @apply ease-in;
@@ -61,7 +61,7 @@
 }
 
 :host(.disabled) button:hover {
-  @apply bg-gray-700;
+  @apply bg-gray-200;
 }
 
 /* :host.iconOnly button {
