@@ -7,12 +7,10 @@
 
 ## Properties
 
-| Property   | Attribute   | Description | Type                       | Default       |
-| ---------- | ----------- | ----------- | -------------------------- | ------------- |
-| `disabled` | `disabled`  |             | `boolean`                  | `false`       |
-| `icon`     | `icon`      |             | `string`                   | `undefined`   |
-| `iconOnly` | `icon-only` |             | `boolean`                  | `false`       |
-| `type`     | `type`      |             | `"primary" \| "secondary"` | `'secondary'` |
+| Property   | Attribute  | Description | Type                       | Default       |
+| ---------- | ---------- | ----------- | -------------------------- | ------------- |
+| `disabled` | `disabled` |             | `boolean`                  | `false`       |
+| `type`     | `type`     |             | `"primary" \| "secondary"` | `'secondary'` |
 
 
 ----------------------------------------------

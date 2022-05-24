@@ -23,8 +23,6 @@ export namespace Components {
     }
     interface PlanitButton {
         "disabled": boolean;
-        "icon": string | null;
-        "iconOnly": boolean;
         "type": ButtonType;
     }
     interface PlanitContainer {
@@ -72,8 +70,6 @@ declare namespace LocalJSX {
     }
     interface PlanitButton {
         "disabled"?: boolean;
-        "icon"?: string | null;
-        "iconOnly"?: boolean;
         "type"?: ButtonType;
     }
     interface PlanitContainer {

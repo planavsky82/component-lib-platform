@@ -72,11 +72,3 @@
 :host(.disabled) button:hover {
   @apply bg-gray-400;
 }
-
-/* :host.iconOnly button {
-
-}
-
-:host.primary button {
-
-} */
