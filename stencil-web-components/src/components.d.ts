@@ -25,6 +25,8 @@ export namespace Components {
         "disabled": boolean;
         "type": ButtonType;
     }
+    interface PlanitCollection {
+    }
     interface PlanitContainer {
     }
 }
@@ -41,6 +43,12 @@ declare global {
         prototype: HTMLPlanitButtonElement;
         new (): HTMLPlanitButtonElement;
     };
+    interface HTMLPlanitCollectionElement extends Components.PlanitCollection, HTMLStencilElement {
+    }
+    var HTMLPlanitCollectionElement: {
+        prototype: HTMLPlanitCollectionElement;
+        new (): HTMLPlanitCollectionElement;
+    };
     interface HTMLPlanitContainerElement extends Components.PlanitContainer, HTMLStencilElement {
     }
     var HTMLPlanitContainerElement: {
@@ -50,6 +58,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "my-component": HTMLMyComponentElement;
         "planit-button": HTMLPlanitButtonElement;
+        "planit-collection": HTMLPlanitCollectionElement;
         "planit-container": HTMLPlanitContainerElement;
     }
 }
@@ -72,11 +81,14 @@ declare namespace LocalJSX {
         "disabled"?: boolean;
         "type"?: ButtonType;
     }
+    interface PlanitCollection {
+    }
     interface PlanitContainer {
     }
     interface IntrinsicElements {
         "my-component": MyComponent;
         "planit-button": PlanitButton;
+        "planit-collection": PlanitCollection;
         "planit-container": PlanitContainer;
     }
 }
@@ -86,6 +98,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
             "planit-button": LocalJSX.PlanitButton & JSXBase.HTMLAttributes<HTMLPlanitButtonElement>;
+            "planit-collection": LocalJSX.PlanitCollection & JSXBase.HTMLAttributes<HTMLPlanitCollectionElement>;
             "planit-container": LocalJSX.PlanitContainer & JSXBase.HTMLAttributes<HTMLPlanitContainerElement>;
         }
     }
