@@ -6,7 +6,6 @@ export default {
 
 export const Collection = () => {
   return `
-  <main>
-    collection
-  </main>`;
+    <planit-collection>collection</planit-collection>
+  `;
 };
