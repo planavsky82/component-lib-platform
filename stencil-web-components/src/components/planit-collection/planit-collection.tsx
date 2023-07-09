@@ -10,6 +10,7 @@ export class PlanitCollection {
   render() {
     return (
       <Host>
+        Collection - - -
         <slot></slot>
       </Host>
     );
